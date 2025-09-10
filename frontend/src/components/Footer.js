@@ -6,8 +6,8 @@ function Footer() {
         {/* Contact */}
         <div className="text-center mb-6">
           <p className="text-[#F5E6D3]">
-            Contact: <a href="mailto:tabaracrinuldinvale@gmail.com" className=" hover:text-orange-400">
-              tabaracrinuldinvale@gmail.com
+            Contact: <a href="mailto:alexdroc74@gmail.com" className=" hover:text-orange-400">
+              alexdroc74@gmail.com
             </a>
           </p>
         </div>

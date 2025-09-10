@@ -132,10 +132,10 @@ function Payment() {
                     vă rugăm să ne contactați la adresa:
                   </p>
                   <a 
-                    href="mailto:tabaracrinuldinvale@gmail.com" 
+                    href="mailto:alexdroc74@gmail.com" 
                     className="inline-flex items-center mt-3 px-4 py-2 bg-gradient-to-br from-[#FF6B3D] to-orange-400  hover:from-[[#FF6B3D] hover:to-orange-600  text-white rounded-lg font-medium  transition-colors"
                   >
-                    tabaracrinuldinvale@gmail.com
+                    alexdroc74@gmail.com
                   </a>
                 </div>
               </div>
