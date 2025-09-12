@@ -6,15 +6,21 @@ Deschizi terminalul din Windows.
 Scrii comanda: **git clone https://github.com/username/youth-camp.git**
 
 ⚠️ Înlocuiește https://github.com/username/youth-camp.git cu link-ul tău de GitHub.
+
 Intră în folderul proiectului folosind comanda: **cd youth-camp**
+
 Deschide proiectul în VSCode folosind comanda: **code .**
 
 **2️⃣ Structura proiectului**
 
 Proiectul arată așa:
+
 youth-camp/
+
 │
+
 ├─ frontend/      ← aplicația React (interfața site-ului)
+
 ├─ backend/       ← server.js (logica backend și API-uri)
 
 În folderul **frontend/src/components** găsești componentele site-ului. Fiecare componentă corespunde unei secțiuni din site (ex: Hero, Navbar, Footer).
@@ -25,25 +31,33 @@ youth-camp/
 Deschide un terminal în VSCode
 
 Intră în folderul frontend: **cd frontend**
+
 Pornește aplicația: **npm start**
 
 Aplicația va fi disponibilă la **http://localhost:3000**
 
 Notă: backend-ul nu va funcționa local pentru trimiterea formularelor, deoarece acestea folosesc variabile din Render.com.
+
 Poți testa doar interfața vizuală și conținutul site-ului.
 
 **4️⃣ Exportarea modificărilor pe GitHub**
 
 După ce ai făcut modificările în componentele din frontend/src/components sau alte fișiere:
 
-1. **Inițializare GitHub - Folosește următoarea comandă într-un terminal din VsCode** 
-**⚠️ ATENȚIE:** Trebuie să fii în folderul principal **youth-camp**, nu în frontend sau backend! Dacă terminalul tău curent e în frontend, deschide un nou terminal sau navighează înapoi cu cd .. până ajungi în directorul principal. 
+1. **Inițializare GitHub - Folosește următoarea comandă într-un terminal din VsCode**
+
+**⚠️ ATENȚIE:** Trebuie să fii în folderul principal **youth-camp**, nu în frontend sau backend!
+
+Dacă terminalul tău curent e în frontend, deschide un nou terminal sau navighează înapoi cu cd .. până ajungi în directorul principal. 
 
 Apoi în folderul principal poți utiliza comanda:
+
 **git init**
 
 **2. Verifică dacă există repository remote setat**
+
 **git remote -v**
+
 Dacă vezi o adresă de GitHub, e in regulă.
 
 Dacă nu există, trebuie să-l adaugi.
@@ -59,6 +73,7 @@ Dacă nu există, trebuie să-l adaugi.
 **4. Verifică statusul modificărilor**
 
 **git status**
+
 Vezi ce fișiere au fost modificate sau adăugate.
 
 
