@@ -54,6 +54,8 @@ Apoi în folderul principal poți utiliza comanda:
 
 **git init**
 
+
+
 **2. Verifică dacă există repository remote setat**
 
 **git remote -v**
@@ -63,11 +65,13 @@ Dacă vezi o adresă de GitHub, e in regulă.
 Dacă nu există, trebuie să-l adaugi.
 
 
+
 **3. Adaugă repository-ul GitHub (dacă nu e setat)**
 
 **git remote add origin https://github.com/username/youth-camp.git**
 
 ⚠️ Înlocuiește link-ul cu repository-ul tău real de GitHub.
+
 
 
 **4. Verifică statusul modificărilor**
@@ -77,6 +81,7 @@ Dacă nu există, trebuie să-l adaugi.
 Vezi ce fișiere au fost modificate sau adăugate.
 
 
+
 **5. Adaugă modificările la commit**
 
 **git add .**
@@ -84,11 +89,13 @@ Vezi ce fișiere au fost modificate sau adăugate.
 ⚠️ . înseamnă „toate fișierele modificate”. Pentru fișiere specifice, înlocuiește cu numele fișierului.
 
 
+
 **6. Creează un commit cu mesaj descriptiv**
 
 **git commit -m "Modificări text și componente"**
 
 💡 Sfat: mesajul să fie scurt și descriptiv (ex: „Actualizare text Hero și InfoSection”).
+
 
 
 **7. Trimite modificările pe GitHub**
