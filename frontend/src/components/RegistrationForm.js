@@ -7,6 +7,7 @@ function RegistrationForm() {
     dataNasterii: '',
     email: '',
     telefon: '',
+    localitate: '',
     detalii: ''
   });
 
@@ -48,6 +49,7 @@ function RegistrationForm() {
           dataNasterii: '',
           email: '',
           telefon: '',
+          localitate: '',
           detalii: ''
         }); 
       } else {
@@ -178,6 +180,20 @@ function RegistrationForm() {
                   />
                 </div>
               </div>
+              {/* Localitate */}
+              <div className="group">
+                <label className="block text-sm font-medium text-[#2C1810] mb-2">Localitate</label>
+                <input 
+                  type="text" 
+                  name="localitate"
+                  placeholder="Introdu localitatea" 
+                  className="w-full p-4 border-2 border-orange-100 rounded-xl transition-colors group-hover:border-[#D4A574]" 
+                  required 
+                  value={formData.localitate}
+                  onChange={handleChange}
+                />
+              </div>
+
 
               {/* Alte detalii */}
               <div className="group">

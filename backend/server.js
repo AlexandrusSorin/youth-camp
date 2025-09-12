@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 
 // Ruta pentru trimiterea emailului
 app.post("/send-email", async (req, res) => {
-  const { nume, varsta, dataNasterii, email, telefon, detalii } = req.body;
+  const { nume, varsta, dataNasterii, email, telefon, localitate,detalii } = req.body;
 
   try {
     let transporter = nodemailer.createTransport({
@@ -42,6 +42,7 @@ app.post("/send-email", async (req, res) => {
         Data nașterii: ${dataNasterii}
         Email: ${email}
         Telefon: ${telefon}
+        Localitate: ${localitate}
         Detalii: ${detalii}
       `
     };

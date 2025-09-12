@@ -1,7 +1,5 @@
-// Importăm hooks din React
-// useState -> pentru a gestiona starea (true/false dacă secțiunea e vizibilă)
-// useEffect -> pentru a rula o acțiune când componenta e montată (animăm secțiunea la încărcare)
 import { useState, useEffect } from 'react';
+import { CalendarDays } from "lucide-react";
 
 function Hero() {
   // Definim o stare: inițial secțiunea NU e vizibilă
@@ -22,7 +20,6 @@ function Hero() {
       {/* Overlay negru semi-transparent peste imagine */}
       <div className="absolute inset-0 bg-black/80"></div>
     
-
       {/* Conținutul principal */}
       <div className="relative z-10 h-full flex items-center justify-center text-white text-center px-6">
         
@@ -32,12 +29,12 @@ function Hero() {
         }`}>
           
           {/* Badge mic deasupra titlului (poți schimba textul aici) */}
-          <div className="inline-block px-8 py-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 mb-10 shadow-2xl">
+          <div className="inline-block px-8 py-3 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 mb-4 shadow-2xl">
             <span className="text-sm font-medium bg-white bg-clip-text text-transparent">
               Ediția 2025 • Înscrieri Deschise
             </span>
           </div>
-          
+        
           {/* Titlu principal (poți schimba textul "Tabără de Tineret") */}
           <div className="mb-8">
             <h1 className="text-6xl md:text-7xl font-black mb-4 leading-none">
@@ -51,17 +48,24 @@ function Hero() {
           </div>
           
           {/* Subtitlu / motto (modifică textul din <p>) */}
-          <div className="relative mb-12">
+          <div className="relative mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent blur-xl"></div>
             <p className="relative text-xl md:text-2xl font-light text-gray-100 italic">
               „Generația care duce mesajul mai departe"
             </p>
           </div>
-          
+         
+        <div className="mb-8 flex justify-center">
+          <span className="inline-flex items-center text-orange-100 text-lg font-medium">
+            <CalendarDays className="w-5 h-5 mr-2" />
+            19-22 decembrie
+          </span>
+        </div>
+
           {/* Butoane principale */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             
-            {/* Buton pentru înscriere (poți schimba textul și linkul din href) */}
+            {/* Buton pentru înscriere */}
             <a href="#înscriere" className="group relative overflow-hidden bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-600 hover:to-yellow-600 text-white font-medium tracking-wide text-md px-7 py-5 rounded-2xl transition-all duration-500 transform hover:scale-105 ">
               <span className="relative flex items-center space-x-3">
                 <span>Înscrie-te acum</span>
@@ -71,7 +75,7 @@ function Hero() {
               </span>
             </a>
 
-            {/* Buton pentru informații (poți schimba textul și linkul din href) */}
+            {/* Buton pentru informații */}
             <a href="#informații" className="group px-7 py-5 border-2 border-white/20 hover:border-white/40 text-white rounded-2xl hover:bg-white/5 transition-all duration-300 backdrop-blur-xl font-medium tracking-wide text-md">
               <span className="flex items-center space-x-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,4 +93,3 @@ function Hero() {
 }
 
 export default Hero;
-
