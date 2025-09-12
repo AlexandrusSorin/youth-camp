@@ -13,12 +13,13 @@ function RegistrationForm() {
   const [modalOpen, setModalOpen] = useState(false); 
   const [isLoading, setIsLoading] = useState(false);
 
-  // De modificat pentru înscrieri epuizate
+  // === DE MODIFICAT PENTRU ÎNSCRIERI EPUIZATE ===
   const inscrieriEpuizate = false; // pune true când vrei să oprești înscrierile
 
   // URL-ul backend-ului - se adaptează automat pentru producție
   const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
+  // === FUNCȚIA DE TRIMITERE A FORMULARULUI ===
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -39,7 +40,8 @@ function RegistrationForm() {
 
       const result = await response.json();
       if (result.success) {
-        setModalOpen(true); 
+        setModalOpen(true); // deschide modalul de succes
+        // resetează formularul
         setFormData({
           nume: '',
           varsta: '',
@@ -59,6 +61,7 @@ function RegistrationForm() {
     }
   };
 
+  // === FUNCȚIA PENTRU ACTUALIZAREA FORMULARULUI ===
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -69,28 +72,41 @@ function RegistrationForm() {
   return (
     <section id="înscriere" className="py-20 px-6">
       <div className="max-w-xl mx-auto">
+
+        {/* === HEADER SECȚIUNE === */}
         <div className="text-center mb-16">
+          {/* Text mic de deasupra titlului */}
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/90 backdrop-blur-sm rounded-full mb-8 shadow-lg border border-amber-200/30">
             <div className="w-2 h-2 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full animate-pulse"></div>
+            {/* Subtitlu mic */}
             <span className="text-[#2C1810] font-semibold text-sm uppercase tracking-wider">Înscriere</span>
             <div className="w-2 h-2 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-pulse"></div>
           </div>
+
+          {/* Titlul mare */}
           <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-[#1A0F0A] bg-clip-text text-transparent">
             Formular de Înscriere
           </h2>
+
+          {/* Descriere scurtă */}
           <p className="text-xl text-[#2C1810] font-light">Completează formularul pentru a te înscrie!</p>
         </div>
 
+        {/* === CONTAINER FORMULAR === */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-gray-50 relative overflow-hidden">
+
+          {/* Daca înscrierile sunt epuizate */}
           {inscrieriEpuizate ? (
-            // Dacă înscrierile sunt epuizate, afișează text
             <p className="text-center text-lg text-red-600 font-semibold">
               Înscrierile pentru această tabără sunt momentan epuizate.
             </p>
           ) : (
-            // Formularul
+            // === FORMULAR ===
             <form onSubmit={handleSubmit} className="relative z-10 space-y-6">
+              
+              {/* Nume și vârstă */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Nume complet */}
                 <div className="group">
                   <label className="block text-sm font-medium text-[#2C1810] mb-2">Nume complet</label>
                   <input 
@@ -103,7 +119,8 @@ function RegistrationForm() {
                     onChange={handleChange}
                   />
                 </div>
-                
+
+                {/* Vârstă */}
                 <div className="group">
                   <label className="block text-sm font-medium text-[#2C1810] mb-2">Vârstă</label>
                   <input 
@@ -120,6 +137,7 @@ function RegistrationForm() {
                 </div>
               </div>
 
+              {/* Data nașterii */}
               <div className="group">
                 <label className="block text-sm font-medium text-[#2C1810] mb-2">Data nașterii</label>
                 <input 
@@ -131,7 +149,8 @@ function RegistrationForm() {
                   onChange={handleChange}
                 />
               </div>
-              
+
+              {/* Email și telefon */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="group">
                   <label className="block text-sm font-medium text-[#2C1810] mb-2">Email</label>
@@ -145,7 +164,7 @@ function RegistrationForm() {
                     onChange={handleChange}
                   />
                 </div>
-                
+
                 <div className="group">
                   <label className="block text-sm font-medium text-[#2C1810] mb-2">Telefon</label>
                   <input 
@@ -159,7 +178,8 @@ function RegistrationForm() {
                   />
                 </div>
               </div>
-              
+
+              {/* Alte detalii */}
               <div className="group">
                 <label className="block text-sm font-medium text-[#2C1810] mb-2">Alte detalii (opțional)</label>
                 <textarea 
@@ -171,7 +191,8 @@ function RegistrationForm() {
                   onChange={handleChange}
                 ></textarea>
               </div>
-              
+
+              {/* Buton submit */}
               <div className="pt-4 text-center">
                 <button 
                   type="submit" 
@@ -180,6 +201,7 @@ function RegistrationForm() {
                 >
                   {isLoading ? (
                     <>
+                      {/* Spinner */}
                       <div className="animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent"></div>
                       <span>Se trimite...</span>
                     </>
@@ -193,12 +215,15 @@ function RegistrationForm() {
         </div>
       </div>
 
-      {/* Modal de succes */}
+      {/* === MODAL SUCCES === */}
       {modalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="bg-white rounded-xl p-8 max-w-sm text-center shadow-lg relative">
+            {/* Titlu modal */}
             <h3 className="text-xl font-bold mb-4">Înscriere reușită!</h3>
+            {/* Mesaj modal */}
             <p className="mb-6">Formularul a fost trimis cu succes. Vei primi un email de confirmare pentru înscriere.</p>
+            {/* Buton închidere modal */}
             <button 
               onClick={() => setModalOpen(false)}
               className="bg-gradient-to-r from-[#FF6B3D] to-orange-500 text-white font-semibold px-6 py-2 rounded-xl hover:from-[#FF6B3D] hover:to-orange-600"
