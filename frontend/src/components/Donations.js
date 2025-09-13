@@ -14,12 +14,12 @@ function Donations() {
 
           {/* AICI se schimbă titlul mare al secțiunii */}
           <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-[#1A0F0A] bg-clip-text text-transparent leading-snug md:leading-snug">
-            Susține Proiectul 
+            Susține Lucrarea 
           </h2>
 
           {/* AICI se schimbă descrierea scurtă sub titlu */}
           <p className="text-lg text-[#2C1810] font-light max-w-2xl mx-auto leading-relaxed">
-            Dacă dorești să contribui la dezvoltarea și desfășurarea Taberei de Tineret Crinul din Vale, poți face o donație prin transfer bancar.
+            Dacă dorești să contribui la dezvoltarea și desfășurarea taberei, poți face o donație prin transfer bancar.
           </p>
         </div>
 
@@ -45,9 +45,9 @@ function Donations() {
 
                     {/* AICI se completează datele bancare */}
                     <ul className="text-[#8B4513] text-sm space-y-1">
-                      <li><strong>Banca:</strong> [De completat]</li>
-                      <li><strong>IBAN:</strong> [De completat]</li>
-                      <li><strong>Titular cont:</strong> [De completat]</li>
+                      <li><strong>Banca:</strong> Banca Transilvania</li>
+                      <li><strong>IBAN:</strong> RO77BTRLRONCRT0CL5228201</li>
+                      <li><strong>Titular cont:</strong> Droc Alexandru</li>
                     </ul>
                   </div>
                 </div>

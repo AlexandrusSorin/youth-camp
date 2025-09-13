@@ -51,7 +51,7 @@ function Hero() {
           <div className="relative mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent blur-xl"></div>
             <p className="relative text-xl md:text-2xl font-light text-gray-100 italic">
-              „Generația care duce mesajul mai departe"
+              „Generația care duce Mesajul mai departe"
             </p>
           </div>
          

@@ -35,9 +35,9 @@ function Payment() {
           {/* 👉 aici modifici taxa (320 lei) */}
           <div className="bg-gradient-to-br from-[#FF6B3D] to-orange-400 px-8 py-8 text-center text-white">
             <div className="text-5xl md:text-6xl font-bold mb-4">
-              320 <span className="text-4xl">lei</span>
+              200 <span className="text-4xl">lei</span>
             </div>
-            <p className="text-xl opacity-90">Taxa completă de participare</p>
+            <p className="text-xl opacity-90">Include cazare si mancare</p>
           </div>
           
           {/* Conținut card */}
@@ -99,7 +99,7 @@ function Payment() {
                     </div>
                   </div>
                   <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-slate-600 text-sm font-mono">[De completat]</p>
+                    <p className="text-slate-600 text-sm font-mono">RO77BTRLRONCRT0CL5228201</p>
                   </div>
                 </div>
                 
@@ -116,7 +116,7 @@ function Payment() {
                     </div>
                   </div>
                   <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-slate-600 text-sm font-mono">[De completat]</p>
+                    <p className="text-slate-600 text-sm font-mono">@alexanou0m</p>
                   </div>
                 </div>
                 
@@ -133,7 +133,7 @@ function Payment() {
                     </div>
                   </div>
                   <div className="bg-slate-50 rounded-lg p-3">
-                    <p className="text-slate-600 text-sm font-mono">[De completat]</p>
+                    <p className="text-slate-600 text-sm font-mono">+40 754 854 845</p>
                   </div>
                 </div>
               </div>
@@ -153,7 +153,7 @@ function Payment() {
                     href="mailto:alexdroc74@gmail.com" 
                     className="inline-flex items-center mt-3 px-4 py-2 bg-gradient-to-br from-[#FF6B3D] to-orange-400 hover:from-[#FF6B3D] hover:to-orange-600 text-white rounded-lg font-medium transition-colors"
                   >
-                    alexdroc74@gmail.com
+                    0754854845
                   </a>
                 </div>
               </div>

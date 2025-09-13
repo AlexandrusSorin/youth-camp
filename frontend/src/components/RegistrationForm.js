@@ -91,7 +91,9 @@ function RegistrationForm() {
           </h2>
 
           {/* Descriere scurtă */}
-          <p className="text-xl text-[#2C1810] font-light">Completează formularul pentru a te înscrie!</p>
+          <p className="text-xl text-[#2C1810] font-light">
+            Inscrierea este finalizata in momentul incare efectuati plata si primiti un SMS de confirmare de la administrator!
+          </p>
         </div>
 
         {/* === CONTAINER FORMULAR === */}
