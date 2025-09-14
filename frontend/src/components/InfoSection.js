@@ -18,7 +18,7 @@ function InfoSection() {
           
           {/* Titlu principal al secțiunii (poți schimba textul "Notă pentru participanți") */}
           <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-[#1A0F0A] bg-clip-text text-transparent leading-snug md:leading-snug">
-            Notă pentru participanți
+            Mesaj pentru participanți
           </h2>
         </div>
         
@@ -35,7 +35,7 @@ function InfoSection() {
               
               {/* Primul paragraf (poți schimba mesajul liber) */}
               <p className="text-lg md:text-xl text-justify text-[#2C1810] leading-relaxed mb-8">
-                Suntem bucuroși să organizăm din nou tabăra de tineret. Este răspunsul rugăciunilor și dorințelor voastre. Dumnezeu a pus o povară în inimile noastre pentru tineretul din România. Voi sunteți noua generație care trebuie să ducă acest mesaj mai departe. Desigur, timpurile ne spun că plecarea Miresei este foarte aproape, dar, dacă cumva Domnul zăbovește, vrem ca „generația născută în pustie” să țină mesajul sus și să cucerească țara promisă.
+                Suntem bucuroși să organizăm din nou o tabără de tineret. Este răspunsul rugăciunilor și dorințelor voastre. Dumnezeu a pus o povară în inimile noastre pentru tineretul din România. Voi sunteți noua generație care trebuie să ducă acest Mesaj mai departe. Desigur, timpurile ne spun că plecarea Miresei este foarte aproape, dar, dacă Domnul zăbovește, vrem ca „generația născută în pustie” să țină Mesajul sus și să cucerească țara promisă.
               </p>
               
               {/* Al doilea paragraf */}

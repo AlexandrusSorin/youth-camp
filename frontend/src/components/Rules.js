@@ -5,15 +5,15 @@ function Rules() {
   // Pentru a modifica: editează textul direct
   const rules = [
     "Trebuie să ai minimum 13 ani împliniți – nu se vor face excepții.",
-    "Vârsta maximă admisă este de 33 de ani.",
+    "Vârsta maximă admisă este de 30 de ani.",
     "Fiecare participant la tabără trebuie să fie înregistrat și să aibă taxa achitată în avans.",
-    "Oricine părăsește terenul taberei are obligația de a anunța supraveghetorii taberei.",
+    "Aceasta tabara este exclusiv pentru tineri, este interzisa participarea parintilor la activitati si la serviciile de biserica",
     "Participanții trebuie să păstreze dormitoarele curate și îngrijite și sunt responsabili pentru orice daună. (Nu ne asumăm răspunderea pentru obiectele uitate.)",
     "Toți trebuie să meargă în dormitoarele repartizate atunci când supraveghetorul dă semnalul „Stingerea!”.",
     "Toți sunt obligați să participe la toate serviciile și activitățile.",
     "Nu sunt permise negative (soundtrack-uri) pentru cântări, iar toate cântările speciale trebuie aprobate în prealabil.",
-    "Participanții, fie tineri, fie adulți, trebuie să se îmbrace modest, în conformitate cu învățăturile fratelui Branham. Codul vestimentar va fi aplicat strict.",
-    "Nu sunt acceptate următoarele articole: maiouri, bluze care lasă buricul la vedere, pantaloni scurți, fuste cu tăieturi, precum și orice fel de tutun, etc."
+    "Participanții, trebuie să se îmbrace modest, în conformitate cu învățăturile fratelui Branham. Codul vestimentar va fi aplicat strict.",
+    "Nu sunt acceptate următoarele articole: maiouri, bluze care lasă buricul la vedere, pantaloni scurți, fuste cu crapaturi adanci, precum și orice fel de tutun, etc."
   ];
 
   return (

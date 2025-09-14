@@ -92,7 +92,7 @@ function RegistrationForm() {
 
           {/* Descriere scurtă */}
           <p className="text-xl text-[#2C1810] font-light">
-            Inscrierea este finalizata in momentul incare efectuati plata si primiti un SMS de confirmare de la administrator!
+            Inscrierea este finalizata in momentul in care efectuati plata si primiti un SMS de confirmare de la administrator!
           </p>
         </div>
 

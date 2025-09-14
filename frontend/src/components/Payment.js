@@ -35,7 +35,7 @@ function Payment() {
           {/* 👉 aici modifici taxa (320 lei) */}
           <div className="bg-gradient-to-br from-[#FF6B3D] to-orange-400 px-8 py-8 text-center text-white">
             <div className="text-5xl md:text-6xl font-bold mb-4">
-              200 <span className="text-4xl">lei</span>
+              300 <span className="text-4xl">lei</span>
             </div>
             <p className="text-xl opacity-90">Include cazare si mancare</p>
           </div>
